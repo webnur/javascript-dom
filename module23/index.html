@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>welcome to our blog website</h1>
+    </header>
+    <main>
+      <article class="blog">
+          <h3>blog  Title one</h3>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,</p>
+      </article>
+
+      <article class="blog">
+        <h3 id="second-title">blog  Title two</h3>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,</p>
+      </article>
+
+      <article class="blog">
+        <h3 id="third-title">blog  Title three</h3>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,</p>
+      </article>
+
+      <article class="blog">
+        <h3>blog  Title three</h3>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,</p>
+      </article>
+    </main>
+    <footer>
+
+    </footer>
+
+    <script>
+      const blogTitle = document.getElementsByTagName('h3')
+      for(const h3 of blogTitle){
+        //console.log(h3.innerText);
+      }
+
+      const blogDetails = document.getElementsByTagName('p')
+      for(const p of blogDetails){
+        //console.log(p)
+      }
+
+      // explore getElementById
+      const secondTitle = document.getElementById('second-title');
+      secondTitle.style.textAlign = 'center';
+
+      const third = document.getElementById('third-title');
+      third.innerText = 'Third title updated by js';
+      third.style.backgroundColor = 'salmon';
+
+      //Explore getElementsByClassName
+      const blogs = document.getElementsByClassName('blog')
+      for(const blog of blogs){
+        //console.log(blog);
+        blog.style.border = '2px solid orange';
+        blog.style.margin = '8px';
+        blog.style.padding = '8px';
+        blog.style.borderRadius = '10px';
+
+      }
+    </script>
+</body>
+</html>
