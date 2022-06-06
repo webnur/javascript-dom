@@ -11,25 +11,34 @@
         <h1>welcome to our blog website</h1>
     </header>
     <main>
-      <article class="blog">
-          <h3>blog  Title one</h3>
+      <section id="blogs">
+        <ul id="list-item">
+          <li>List 1</li>
+          <li>List 2</li>
+          <li>List 3</li>
+          <li>List 4</li>
+        </ul>
+        <article class="blog">
+            <h3>blog  Title one</h3>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,</p>
+        </article>
+  
+        <article class="blog">
+          <h3 id="second-title">blog  Title two</h3>
           <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,</p>
-      </article>
-
-      <article class="blog">
-        <h3 id="second-title">blog  Title two</h3>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,</p>
-      </article>
-
-      <article class="blog">
-        <h3 id="third-title">blog  Title three</h3>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,</p>
-      </article>
-
-      <article class="blog">
-        <h3>blog  Title three</h3>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,</p>
-      </article>
+        </article>
+  
+        <article class="blog">
+          <h3 id="third-title">blog  Title three</h3>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,</p>
+        </article>
+  
+        <article class="blog">
+          <h3>blog  Title three</h3>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,</p>
+        </article>
+      </section>
+     
     </main>
     <footer>
 
@@ -64,6 +73,32 @@
         blog.style.borderRadius = '10px';
 
       }
+
+
+      // Create an Element and add using javascript
+
+      // create an element
+      const li = document.createElement('li');
+      li.innerText = 'list 5'
+
+      // add element 
+      const listItem = document.getElementById('list-item');
+      listItem.appendChild(li)
+
+
+      // add article 
+      const article = document.createElement('article');
+      const h3 = document.createElement('h3');
+      h3.innerText = 'blog title six ';
+      const p = document.createElement('p');
+      p.innerText = 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make';
+
+      article.appendChild(h3)
+      article.appendChild(p)
+
+      const addBlogs = document.getElementById('blogs')
+      addBlogs.appendChild(article)
+
     </script>
 </body>
 </html>
