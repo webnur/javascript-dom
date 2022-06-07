@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event common system</title>
+</head>
+<body>
+    
+    <p id="clicking-method"></p>
+    <input id="updated-name" type="text">
+    <button id="updated-field">updated</button>
+    <button onclick="handleJustFunctionMethod()">Just function</button>
+    <button id="direct-event">direct add event Listener</button>
+
+    <script>
+        
+        function handleJustFunctionMethod (){
+            const p = document.getElementById('clicking-method');
+            p.innerText = 'set by using function'
+        }
+
+        // direct add event listener
+        document.getElementById('direct-event').addEventListener('click', function(){
+            const p = document.getElementById('clicking-method')
+            p.innerText = 'set by direct add event listener'
+        })
+
+
+        //direct with input field
+        document.getElementById('updated-field').addEventListener('click', function(){
+            const updatedName = document.getElementById('updated-name');
+            // console.log(updatedName);
+            const p = document.getElementById('clicking-method')
+            p.innerText = updatedName.value;
+            updatedName.value = '';
+        
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVENT niye click baji</title>
+</head>
+<body>
+    <header>
+
+    </header>
+    <main>
+        <h1>event niye clickbaji</h1>
+        <button onclick="document.body.style.backgroundColor = 'yellow'">Click Me: yellow</button>
+        <button onclick="makeRed()">Click me: Red</button>
+        <button id="blue-button">Click me: Blue</button>
+        <button id="green-button">Click me: Green</button>
+        <button id="goldenrod-butoon">Click me: golden rod</button>
+        <button id="hotpink-butoon">Click me: hot pink</button>
+        <button id="LightBlue-butoon">Click me: Light Blue</button>
+    </main>
+    <footer>
+
+    </footer>
+<script src="js/event.js"></script>
+    <script>
+
+        document.getElementById('LightBlue-butoon').addEventListener('click', function(){
+            document.body.style.backgroundColor = 'LightBlue'
+        })
+    </script>
+</body>
+</html>
