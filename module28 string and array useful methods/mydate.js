@@ -1,0 +1,2 @@
+
+const myFavDate = new Date()
